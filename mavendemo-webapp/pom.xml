@@ -3,7 +3,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>mavendemo-webapp</artifactId>
-	<packaging>war</packaging>
+	<packaging>war</packaging>	
+	<parent>
+		<groupId>com.learnmaven</groupId>
+		<artifactId>maven_demo-parent</artifactId>
+		<version>1.0</version> <!-- some comment here>
+	</parent>	
 	<name>mavendemo-webapp Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
@@ -29,9 +34,4 @@
 		</plugins>
 		<finalName>mavendemo-webapp</finalName>
 	</build>
-	<parent>
-		<groupId>com.learnmaven</groupId>
-		<artifactId>maven_demo-parent</artifactId>
-		<version>1.0</version>
-	</parent>
 </project>
